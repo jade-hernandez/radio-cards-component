@@ -209,7 +209,7 @@ const RadioCardShowcase = ({ cards }: { cards: IRadioCard[] }) => {
 
 function App() {
   return (
-    <main className='mx-auto flex min-h-screen w-full min-w-dvw flex-col items-center gap-8 py-50'>
+    <main className='mx-auto flex min-h-screen w-full min-w-dvw flex-col items-center gap-8 py-32 md:py-75 lg:py-67'>
       <RadioCardShowcase cards={weeklyRadioCards} />
       <RadioCardShowcase cards={monthlyRadioCards} />
       <RadioCardShowcase cards={annuallyRadioCards} />
