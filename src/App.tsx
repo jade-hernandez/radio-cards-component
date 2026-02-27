@@ -160,7 +160,8 @@ const RadioCard = ({
   return (
     <div
       className={cn(
-        "group flex cursor-pointer rounded-sm border border-neutral-200 focus-within:bg-neutral-50 focus-within:shadow-[0_0px_0px_1px_rgba(68,76,231,0.10),0_0px_0px_4px_rgba(68,76,231,0.12)] hover:bg-neutral-50",
+        "group flex cursor-pointer rounded-sm border border-neutral-200 focus-within:shadow-[0_0px_0px_1px_rgba(68,76,231,0.10),0_0px_0px_4px_rgba(68,76,231,0.12)] focus:bg-neutral-50",
+        !isDisabled && "hover:bg-neutral-50",
         isChecked && "border-indigo-600",
         isDisabled && "cursor-not-allowed bg-neutral-100 text-neutral-400"
       )}
